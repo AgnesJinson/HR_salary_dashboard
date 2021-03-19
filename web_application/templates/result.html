@@ -1,0 +1,37 @@
+<html>
+    <head>
+    <title>HR Dashboard </title>
+    <style>
+		body {background-image : url('static/images/salary.jpg');
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+		background-size: 100% 100%;}
+
+        img.one{
+        height: 40%;
+         width: 20%;
+        }
+        </style>
+    </head>
+
+<body>
+    <center>
+
+        <h1 style="color:powderblue;"> PREDICTION  </h1>
+  
+     {%if data == 0%}
+   
+   <h2 style="color:powderblue;">Less than or equal to 50000</h2>
+            
+     {%else%}
+    
+   <h2 style="color:powderblue;">Greater than 50000</h2>
+        
+        
+        
+     {% endif %}
+    <br><br>
+    
+    </center>
+</body>
+</html>

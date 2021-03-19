@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="user-scalable=0, width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<title>HR salary Prediction</title>
+	<link rel="stylesheet" type="text/css" href="static/css/style.css">
+	<link rel="stylesheet" type="text/css" href="static/css/mobile.css">
+	<script type='text/javascript' src='static/js/mobile.js'></script>
+	<style>
+		body {background-image : url('static/images/salary2.jpg');
+					  background-repeat: no-repeat;
+					  background-attachment: fixed;
+					  background-size: 100% 100%;}
+
+		#commo{ float:left;
+		        width:200px;
+				padding-right: 24px;
+				size:"55"; 
+				font-size: 20px;
+				color:goldenrod;
+				}
+		#lol{
+			margin:995px 10px 75px 1600px;
+		}
+		* {
+  box-sizing: border-box;
+}
+
+/* Create three equal columns that floats next to each other */
+.column {
+  float: left;
+  width: 500%;
+  padding: 100px;
+  height: 500px; /* Should be removed. Only for demonstration */
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+				</style>    
+</head>
+<body>
+	<div id="header">
+		<h1 style='color:red;'> <span style="color:powderblue;" ,text-decoration="underline">SALARY PREDICTION</h1>
+		<ul id="navigation">
+			<li class="current">
+				<a href="/">Home</a>
+			</li>
+			
+			<li>
+				<a href="/prediction">Salary Prediction</a>
+				
+			</li>
+			
+			
+		</ul>
+	</div>
+	    <div>
+
+</div>
+		  
+	  <form method='POST' , action="{{url_for('quality')}}">
+		<div>   
+			<centre>
+				
+		       <input type='number', name='a', placeholder="Enter the Age ", size="85",  style="background-color:powderblue;"><br><br><br>
+			    <input type='text', name="b", placeholder="Enter the workclass", size="65", style="background-color:powderblue;"><br><br><br>
+				<input type="text", name="c", placeholder='Enter the education', size="65", style="background-color:powderblue;"><br><br><br>
+				<input type="number", name="d", placeholder="Enter the education-num", size="65", style="background-color:powderblue;"><br><br><br>
+				<input type='text', name="e", placeholder="Enter the maritial-status", size="65", style="background-color:powderblue;"><br><br><br>
+			    <input type='text', name='f', placeholder="Enter the occupation", size="65", style="background-color:powderblue;"><br><br><br>
+			    <input type='text', name='g', placeholder="Enter the relationship", size="65", style="background-color:powderblue;"><br><br><br>
+                <input type='text', name='h', placeholder="Enter the race", size="65", style="background-color:powderblue;"><br><br><br>
+                
+				<input type='text', name='i', placeholder="Enter the sex" , size="65", style="background-color:powderblue;"><br><br><br>
+				<input type='number', name='j', placeholder="Enter the capital-gain", size="65", style="background-color:powderblue;"><br><br><br>
+				<input type='number', name='k', placeholder="Enter the capital-loss" , size="65", style="background-color:powderblue;"><br><br><br><br>
+				<input type='number', name='l', placeholder="Enter the letter hours-per-week", size="65", style="background-color:powderblue;"><br><br><br>
+				<input type='text', name='m', placeholder="Enter the native-country", size="65", style="background-color:powderblue;"><br><br><br>
+                <input type="submit", value ="Predict">
+              </centre>  
+		 </div>
+			   
+		
+			
+		</form>
+	</div>
+		</centre>
+		<div id=lol>
+			
+				<a href="https://www.facebook.com/" id="facebook" target="_blank">Facebook</a>
+				<a href="https://twitter.com/LOGIN" id="twitter" target="_blank">Twitter</a>
+				<a href="https://myaccount.google.com/?utm_source=sign_in_no_continue&pli=1" id="googleplus" target="_blank">Google&#43;</a>
+				<a href="https://in.pinterest.com/" id="pinterest" target="_blank">Pinterest</a>
+			</div>
+		
+    </body>
+</html>
